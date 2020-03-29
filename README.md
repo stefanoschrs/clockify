@@ -14,15 +14,15 @@ This is just a simple tool for easy and fast reporting, straight from the termin
 ### Examples
 
 ##### Normal
-```shell script
+```console
 $ ./clockify
 Workspace: Stefanos Chrs's workspace
 	Project: Blog
 		User: Stefanos Chrs
 			Total: 8h37m27s
 ```
-
-```shell script
+  
+```console
 $ ./clockify  -v
 Workspace: Stefanos Chrs's workspace
 	Project: Blog
@@ -34,10 +34,9 @@ Workspace: Stefanos Chrs's workspace
 			Entry: PT1H2M31S - CMS
 			Entry: PT3H21M29S - Migration
 ```
-
+  
 ##### Output: JSON
-
-```shell script
+```console
 $ ./clockify -json
 [
   {
@@ -64,8 +63,8 @@ $ ./clockify -json
   }
 ]
 ```
-
-```shell script
+  
+```console
 $ ./clockify -json -v
 [
   {
