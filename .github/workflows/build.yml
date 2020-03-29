@@ -8,6 +8,8 @@ jobs:
         platform: [ubuntu-latest]
     runs-on: ${{ matrix.platform }}
     steps:
+      - name: Install upx
+        run: sudo apt-get install -y upx
       - name: Install Go
         uses: actions/setup-go@v1
         with:
@@ -15,7 +17,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Build
-        run: go build
+        run: make build-prod
       - uses: actions/upload-artifact@master
         with:
           name: clockify
